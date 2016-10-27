@@ -6,7 +6,7 @@
  * Time: 10:36
  */
 
-namespace qb_php_sdk\actions;
+namespace qb_php_sdk\Actions;
 
 
 use qb_php_sdk\Core\IntuitServicesType;

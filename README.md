@@ -19,25 +19,7 @@ BEFORE YOU GET STARTED
 In order to successfully use the SDK, you'll need to have:
 
 * An app (even if pre-production) on developer.intuit.com.  See https://developer.intuit.com/Application/Create
-* OAuth authentication keys and secrets for initial testing.  See https://developer.intuit.com/apiexplorer
 * A QuickBooks Online or QuickBooks Desktop company file, and know it's RealmId.  See https://developer.intuit.com/.
-
-To make full use of the SDK, including samples, tests, and your own production code, put your OAuth keys and secrets into three config files:
-
-* sdk/sdk.config: for ongoing use of the SDK as you transition to production
-* tests/App.config: for use of the tests
-* samples/App.config: for use of the samples
-
-The easiest way to start is to add your configuration to all three of these locations so that you have full use of the SDK, tests, and samples while you get started.
-
-Do NOT run the samples or any of the tests against a RealmId that contains any real accounting data.  The tests and samples are highly invasive.
-
-
-TERMINOLOGY
------------
-
-* POPO: Plain Old PHP Object, especially for PHP classes that mimic the IPP v3 entities
-* IPP v3 XSD: XSDs that specify the objects that can be used with IPP v3 APIs
 
 
 FOLDER STRUCTURE
@@ -58,21 +40,52 @@ Package structure:
 * Utility: classes that performs technical tasks such us serialization and compression
 * XSD2PHP: 3th party library
 
-Repository structure:
-
-* sdk: Data Services, Service Context, Platform Services, and related functionality.
-* sdk/Data: POPO classes that mimic the XSD object model for IPP v3 entities.  Auto-generated via build script, based on XSDs.
-* docs: generated docs (via phpdocumentor)
-* build: phing-based scripts to build POPO objects based on XSD inputs, generate docs, run tests, etc.
-* dependencies: 3rd party external dependencies
-* schemas: XSDs that specify the objects to be used with IPP v3
-* tests: Currently contains unit tests for POPO objects, but will contain tests for other parts of the SDK in the future
-* samples: A variety of isolated samples that demonstrate the use of the SDK for various operations including creating an entity, running a query, deleting entities, etc.
+* Actions - auth and disconnect actions
+* CRUD - create, read, update and delete entity
 
 
-RUN-TIME DEPENDENCIES
----------------------
+INITIALIZATION
+----------------
+1. Set global constants (get OAUTH_CONSUMER_KEY and OAUTH_CONSUMER_SECRET  from application on developer.intuit.com)
+define('OAUTH_REQUEST_URL', 'https://oauth.intuit.com/oauth/v1/get_request_token');
+define('OAUTH_ACCESS_URL', 'https://oauth.intuit.com/oauth/v1/get_access_token');
+define('OAUTH_AUTHORISE_URL', 'https://appcenter.intuit.com/Connect/Begin');
+define('OAUTH_CONSUMER_KEY', '***********************');
+define('OAUTH_CONSUMER_SECRET', '**********************');
+define('CALLBACK_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/quickbooks/quickbooks/oauth/');
 
-The XSD2PHP dependency is derived from https://github.com/moyarada/XSD-to-PHP with certain modifications that are believed to be of limited use beyond this SDK, therefore there is no plan to send a pull request to the broader project.
+2. In Yii config file setting alias for SDK folder. For example:
+    'aliases' => [
+        '@qb_php_sdk' => '@vendor/qb_php_sdk',
+    ],
 
+3. Add the Connect to QuickBooks button
+The user initiates the authorization flow to a QuickBooks Online company by clicking the Connect to QuickBooks button you provide in your app.
+Include the JavaScript library
+    <script src="https://js.appcenter.intuit.com/Content/IA/intuit.ipp.anywhere-1.3.3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        intuit.ipp.anywhere.setup({
+                grantUrl: 'http://www.mycompany.com/HelloWorld/RequestTokenServlet',
+                datasources: {
+                     quickbooks : true,
+                     payments : false
+               }
+        });
+    </script>
+Description:
 
+1) Function	intuit.ipp.anywhere.setup(​)
+
+2) Parameters
+* grantUrl—The URL of the code on your site that begins the user authorization flow by getting an OAuth request token.
+  The flow is initiated when the user clicks the Connect to QuickBooks button.  This URL points to the Request Token Code.  Make sure this matches the value of the Host Name Domain field in your app's setting page on its Development tab.  To see the app's settings, select the app from My Apps
+* datasources—The datasources you are accessing from your app.
+* quickbooks—Enable access to QuickBooks Online company. If not specified, default is true.
+* payments—​Enable access to QuickBooks payment data. If not specified, default is false
+​* paymentOptions—Payment options if datasources. Payments is set to true.
+* intuitReferred—Indicates whether merchant being sent through the connect to QuickBooks flow is referred by Intuit or
+ not. If not specified, default is true: referred by Intuit.
+
+ 4. Example, how add purchase order from $entity (JSON format)
+ $purchaseOrder = new PurchaseOrder();
+ $purchaseOrder->create($entity);
