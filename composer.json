@@ -1,5 +1,5 @@
 {
-  "name": "sanchezzzov/qb-php-sdk",
+  "name": "qb-php-sdk",
   "type": "library",
   "description": "Simple wrapper over QuickBooks Software Development Kit",
   "keywords": [
