@@ -63,18 +63,18 @@ INITIALIZATION
 Then use command: composer update "qb_php_sdk"
 
 2. Set global constants (get OAUTH_CONSUMER_KEY and OAUTH_CONSUMER_SECRET  from app on developer.intuit.com)
-define('OAUTH_REQUEST_URL', 'https://oauth.intuit.com/oauth/v1/get_request_token');
-define('OAUTH_ACCESS_URL', 'https://oauth.intuit.com/oauth/v1/get_access_token');
-define('OAUTH_AUTHORISE_URL', 'https://appcenter.intuit.com/Connect/Begin');
-define('OAUTH_CONSUMER_KEY', ''); //to get from app settings
-define('OAUTH_CONSUMER_SECRET', ''); //to get from app settings
-define('CALLBACK_URL', ''); // example 'http://' . $_SERVER['HTTP_HOST'] . '/quickbooks/quickbooks/oauth/'
+* `define('OAUTH_REQUEST_URL', 'https://oauth.intuit.com/oauth/v1/get_request_token');`
+* `define('OAUTH_ACCESS_URL', 'https://oauth.intuit.com/oauth/v1/get_access_token');`
+* `define('OAUTH_AUTHORISE_URL', 'https://appcenter.intuit.com/Connect/Begin');`
+* `define('OAUTH_CONSUMER_KEY', ''); //to get from app settings`
+* `define('OAUTH_CONSUMER_SECRET', ''); //to get from app settings`
+* `define('CALLBACK_URL', ''); // example 'http://' . $_SERVER['HTTP_HOST'] . '/quickbooks/quickbooks/oauth/'`
 
 3. In Yii config file setting alias for SDK folder.
 For example:
-    'aliases' => [
+    `'aliases' => [
         '@qb_php_sdk' => '@vendor/qb_php_sdk',
-    ],
+    ],`
 
 
 USAGE
@@ -82,7 +82,7 @@ USAGE
 1. Add the Connect to QuickBooks button
 The user initiates the authorization flow to a QuickBooks Online company by clicking the Connect to QuickBooks button you provide in your app.
 Include the JavaScript library
-    <script src="https://js.appcenter.intuit.com/Content/IA/intuit.ipp.anywhere-1.3.3.js" type="text/javascript"></script>
+    `<script src="https://js.appcenter.intuit.com/Content/IA/intuit.ipp.anywhere-1.3.3.js" type="text/javascript"></script>
     <script type="text/javascript">
         intuit.ipp.anywhere.setup({
                 grantUrl: 'http://www.mycompany.com/HelloWorld/RequestTokenServlet',
@@ -91,7 +91,7 @@ Include the JavaScript library
                      payments : false
                }
         });
-    </script>
+    </script>`
 
 Description:
 1) Function	intuit.ipp.anywhere.setup(​)
@@ -112,9 +112,9 @@ EXAMPLES
 See json format here qb_php_sdk/CRUD/json/
 
 Example, how add purchase order from $json
-    $purchaseOrder = new PurchaseOrder();
-    $purchaseOrder->create($json);
+    `$purchaseOrder = new PurchaseOrder();
+    $purchaseOrder->create($json);`
 
 Get vendor list:
-    $vendor = new Vendor();
-    $vendorList = $vendor->findAll();
+    `$vendor = new Vendor();
+    $vendorList = $vendor->findAll();`
