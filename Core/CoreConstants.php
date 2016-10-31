@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\Core;
+namespace qb-php-sdk\Core;
 /**
  * Constants whose values do not change.
  */

@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\Core\Configuration;
+namespace qb-php-sdk\Core\Configuration;
 /*require_once(PATH_SDK_ROOT . 'Core/Configuration/RequestResponse.php');*/
 
 /**

@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\Core;
+namespace qb-php-sdk\Core;
 /*require_once(PATH_SDK_ROOT . 'Core/RestCalls/Compression/DataCompressionFormat.php');*/
 
 /**

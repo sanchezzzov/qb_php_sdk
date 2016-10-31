@@ -1,4 +1,4 @@
-<?php namespace qb_php_sdk\Data;
+<?php namespace qb-php-sdk\Data;
 
 /**
  * @xmlNamespace http://schema.intuit.com/finance/v3

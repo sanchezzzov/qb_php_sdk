@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\Core\RestCalls\Compression;
+namespace qb-php-sdk\Core\RestCalls\Compression;
 /**
  * Format used to compress data.
  */

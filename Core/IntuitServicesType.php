@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\Core;
+namespace qb-php-sdk\Core;
 
 /**
  * This Enumeration specifies which Intuit service to connect to. It is  Either QBO or QBD.

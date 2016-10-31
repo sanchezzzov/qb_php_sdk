@@ -6,17 +6,17 @@
  * Time: 10:41
  */
 
-namespace qb_php_sdk\CRUD;
+namespace qb-php-sdk\CRUD;
 
 
-use qb_php_sdk\Data\IPPAccount;
-use qb_php_sdk\Data\IPPAccountBasedExpenseLineDetail;
-use qb_php_sdk\Data\IPPAccountTypeEnum;
-use qb_php_sdk\Data\IPPItemBasedExpenseLineDetail;
-use qb_php_sdk\Data\IPPLine;
-use qb_php_sdk\Data\IPPLineDetailTypeEnum;
-use qb_php_sdk\Data\IPPPurchaseOrder;
-use qb_php_sdk\QuickBooksService;
+use qb-php-sdk\Data\IPPAccount;
+use qb-php-sdk\Data\IPPAccountBasedExpenseLineDetail;
+use qb-php-sdk\Data\IPPAccountTypeEnum;
+use qb-php-sdk\Data\IPPItemBasedExpenseLineDetail;
+use qb-php-sdk\Data\IPPLine;
+use qb-php-sdk\Data\IPPLineDetailTypeEnum;
+use qb-php-sdk\Data\IPPPurchaseOrder;
+use qb-php-sdk\QuickBooksService;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Json;
 

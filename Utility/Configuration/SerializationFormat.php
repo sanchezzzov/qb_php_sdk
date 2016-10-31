@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\Utility\Configuration;
+namespace qb-php-sdk\Utility\Configuration;
 
 /**
  * This file contains serialization format enumeration.

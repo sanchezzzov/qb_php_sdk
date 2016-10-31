@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\Diagnostics;
+namespace qb-php-sdk\Diagnostics;
 
 /*require_once(PATH_SDK_ROOT . 'Diagnostics/TraceLevel.php');*/
 

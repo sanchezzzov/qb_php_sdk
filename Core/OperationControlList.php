@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\Core;
+namespace qb-php-sdk\Core;
 /**
  * Provides controll over executable operations per described entities
  * Supports wildcards as global level.

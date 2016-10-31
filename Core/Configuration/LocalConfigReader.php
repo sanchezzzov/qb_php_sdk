@@ -1,8 +1,8 @@
 <?php
-namespace qb_php_sdk\Core\Configuration;
-use qb_php_sdk\Core\OperationControlList;
-use qb_php_sdk\Security\OAuthRequestValidator;
-use qb_php_sdk\Utility\Configuration\CompressionFormat;
+namespace qb-php-sdk\Core\Configuration;
+use qb-php-sdk\Core\OperationControlList;
+use qb-php-sdk\Security\OAuthRequestValidator;
+use qb-php-sdk\Utility\Configuration\CompressionFormat;
 use SimpleXMLElement;
 
 /*require_once(PATH_SDK_ROOT . 'Core/Configuration/IppConfiguration.php');

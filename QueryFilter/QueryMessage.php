@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\QueryMessage;
+namespace qb-php-sdk\QueryMessage;
 /**
  * Class to have query message
  */

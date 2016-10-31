@@ -1,20 +1,20 @@
 <?php
-namespace qb_php_sdk\Core\RestCalls;
+namespace qb-php-sdk\Core\RestCalls;
 /*require_once(PATH_SDK_ROOT . 'Core/RestCalls/RestHandler.php');
 require_once(PATH_SDK_ROOT . 'Core/RestCalls/FaultHandler.php');
 require_once(PATH_SDK_ROOT . 'Utility/IntuitErrorHandler.php');*/
 use Exception;
 use OAuth;
 use OAuthException;
-use qb_php_sdk\Core\CoreConstants;
-use qb_php_sdk\Core\CoreHelper;
-use qb_php_sdk\Core\IntuitServicesType;
-use qb_php_sdk\Core\ServiceContext;
-use qb_php_sdk\Diagnostics\TraceLevel;
-use qb_php_sdk\Exception\IdsException;
-use qb_php_sdk\Utility\IntuitErrorHandler;
-use qb_php_sdk\Utility\Serialization\JsonObjectSerializer;
-use qb_php_sdk\Utility\Serialization\XmlObjectSerializer;
+use qb-php-sdk\Core\CoreConstants;
+use qb-php-sdk\Core\CoreHelper;
+use qb-php-sdk\Core\IntuitServicesType;
+use qb-php-sdk\Core\ServiceContext;
+use qb-php-sdk\Diagnostics\TraceLevel;
+use qb-php-sdk\Exception\IdsException;
+use qb-php-sdk\Utility\IntuitErrorHandler;
+use qb-php-sdk\Utility\Serialization\JsonObjectSerializer;
+use qb-php-sdk\Utility\Serialization\XmlObjectSerializer;
 
 /**
  * SyncRestHandler contains the logic for preparing the REST request, calls REST services and returns the response.

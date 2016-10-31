@@ -1,4 +1,4 @@
-<?php namespace qb_php_sdk\Data;
+<?php namespace qb-php-sdk\Data;
 require_once('IPPSalesItemLineDetail.php');
 
 /**

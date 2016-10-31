@@ -6,7 +6,7 @@
  * Time: 16:39
  */
 
-namespace qb_php_sdk\Actions;
+namespace qb-php-sdk\Actions;
 
 
 use yii\base\Action;

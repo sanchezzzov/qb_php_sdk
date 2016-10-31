@@ -1,18 +1,18 @@
 <?php
-namespace qb_php_sdk\Core;
+namespace qb-php-sdk\Core;
 /*require_once(PATH_SDK_ROOT . 'Exception/SdkExceptions/InvalidTokenException.php');
 require_once(PATH_SDK_ROOT . 'Core/CoreConstants.php');
 require_once(PATH_SDK_ROOT . 'Core/Configuration/IppConfiguration.php');
 require_once(PATH_SDK_ROOT . 'Core/Configuration/LocalConfigReader.php');
 require_once(PATH_SDK_ROOT . 'Security/OAuthRequestValidator.php');*/
 use Exception;
-use qb_php_sdk\Core\Configuration\IppConfiguration;
-use qb_php_sdk\Core\Configuration\LocalConfigReader;
-use qb_php_sdk\Diagnostics\TraceLevel;
-use qb_php_sdk\Exception\IdsException;
-use qb_php_sdk\Exception\SdkExceptions\InvalidRealmException;
-use qb_php_sdk\Exception\SdkExceptions\InvalidTokenException;
-use qb_php_sdk\Security\RequestValidator;
+use qb-php-sdk\Core\Configuration\IppConfiguration;
+use qb-php-sdk\Core\Configuration\LocalConfigReader;
+use qb-php-sdk\Diagnostics\TraceLevel;
+use qb-php-sdk\Exception\IdsException;
+use qb-php-sdk\Exception\SdkExceptions\InvalidRealmException;
+use qb-php-sdk\Exception\SdkExceptions\InvalidTokenException;
+use qb-php-sdk\Security\RequestValidator;
 
 /**
  * Intuit Partner Platform Service Context.

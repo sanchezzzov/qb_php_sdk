@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\XSD2PHP\src\com\mikebevz\xsd2php;
+namespace qb-php-sdk\XSD2PHP\src\com\mikebevz\xsd2php;
 
 /**
  * Copyright 2010 Mike Bevz <myb@mikebevz.com>

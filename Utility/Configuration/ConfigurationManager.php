@@ -1,6 +1,6 @@
 <?php
-namespace qb_php_sdk\Utility\Configuration;
-use qb_php_sdk\Core\CoreConstants;
+namespace qb-php-sdk\Utility\Configuration;
+use qb-php-sdk\Core\CoreConstants;
 
 /*require_once(PATH_SDK_ROOT . 'Core/CoreConstants.php');*/
 

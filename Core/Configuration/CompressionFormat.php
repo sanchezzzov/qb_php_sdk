@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\Core\Configuration;
+namespace qb-php-sdk\Core\Configuration;
 /**
 * This file contains enumeration for compression format.
 */

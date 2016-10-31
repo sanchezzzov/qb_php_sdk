@@ -1,7 +1,7 @@
 <?php
-namespace qb_php_sdk\Exception\SdkExceptions;
+namespace qb-php-sdk\Exception\SdkExceptions;
 //require_once(PATH_SDK_ROOT . 'Exception/SdkException.php');
-use qb_php_sdk\Exception\SdkException;
+use qb-php-sdk\Exception\SdkException;
 
 /**
  * Represents a Retry Exception.

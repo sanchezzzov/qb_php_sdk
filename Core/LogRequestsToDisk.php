@@ -1,7 +1,7 @@
 <?php
-namespace qb_php_sdk\Core;
+namespace qb-php-sdk\Core;
 use DirectoryIterator;
-use qb_php_sdk\Exception\IdsException;
+use qb-php-sdk\Exception\IdsException;
 
 /**
  * Logs API Requests/Responses To Disk

@@ -6,11 +6,11 @@
  * Time: 13:50
  */
 
-namespace qb_php_sdk\CRUD;
+namespace qb-php-sdk\CRUD;
 
 
-use qb_php_sdk\Data\IPPVendor;
-use qb_php_sdk\QuickBooksService;
+use qb-php-sdk\Data\IPPVendor;
+use qb-php-sdk\QuickBooksService;
 
 class Vendor extends QuickBooksService
 {

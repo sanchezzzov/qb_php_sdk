@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\Security;
+namespace qb-php-sdk\Security;
 /**
 * Base class that all authentication mechanisms should inherit from
 * 

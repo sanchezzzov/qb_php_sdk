@@ -1,4 +1,4 @@
-<?php namespace qb_php_sdk\DataService;
+<?php namespace qb-php-sdk\DataService;
 
 /*require_once(PATH_SDK_ROOT . 'DataService/IntuitBatchResponse.php');
 require_once(PATH_SDK_ROOT . 'DataService/IntuitResponseStatus.php');
@@ -10,19 +10,19 @@ require_once(PATH_SDK_ROOT . 'Exception/ServiceException.php');
 require_once(PATH_SDK_ROOT . 'Exception/SecurityException.php');*/
 use DOMDocument;
 use DOMXPath;
-use qb_php_sdk\Core\CoreConstants;
-use qb_php_sdk\Core\CoreHelper;
-use qb_php_sdk\Core\RestCalls\RequestParameters;
-use qb_php_sdk\Core\RestCalls\SyncRestHandler;
-use qb_php_sdk\Data\IPPBatchItemRequest;
-use qb_php_sdk\Data\IPPIntuitBatchRequest;
-use qb_php_sdk\Diagnostics\TraceLevel;
-use qb_php_sdk\Exception\IdsException;
-use qb_php_sdk\Exception\IdsExceptionManager;
-use qb_php_sdk\Exception\SecurityException;
-use qb_php_sdk\Exception\ServiceException;
-use qb_php_sdk\Exception\ValidationException;
-use qb_php_sdk\Utility\Serialization\XmlObjectSerializer;
+use qb-php-sdk\Core\CoreConstants;
+use qb-php-sdk\Core\CoreHelper;
+use qb-php-sdk\Core\RestCalls\RequestParameters;
+use qb-php-sdk\Core\RestCalls\SyncRestHandler;
+use qb-php-sdk\Data\IPPBatchItemRequest;
+use qb-php-sdk\Data\IPPIntuitBatchRequest;
+use qb-php-sdk\Diagnostics\TraceLevel;
+use qb-php-sdk\Exception\IdsException;
+use qb-php-sdk\Exception\IdsExceptionManager;
+use qb-php-sdk\Exception\SecurityException;
+use qb-php-sdk\Exception\ServiceException;
+use qb-php-sdk\Exception\ValidationException;
+use qb-php-sdk\Utility\Serialization\XmlObjectSerializer;
 use SimpleXMLElement;
 
 /**

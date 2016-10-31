@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\Exception;
+namespace qb-php-sdk\Exception;
 use Exception;
 
 /**

@@ -6,14 +6,14 @@
  * Time: 14:48
  */
 
-namespace qb_php_sdk\CRUD;
+namespace qb-php-sdk\CRUD;
 
 
-use qb_php_sdk\Data\IPPAccount;
-use qb_php_sdk\Data\IPPAccountClassificationEnum;
-use qb_php_sdk\Data\IPPAccountSubTypeEnum;
-use qb_php_sdk\Data\IPPAccountTypeEnum;
-use qb_php_sdk\QuickBooksService;
+use qb-php-sdk\Data\IPPAccount;
+use qb-php-sdk\Data\IPPAccountClassificationEnum;
+use qb-php-sdk\Data\IPPAccountSubTypeEnum;
+use qb-php-sdk\Data\IPPAccountTypeEnum;
+use qb-php-sdk\QuickBooksService;
 
 class Account extends QuickBooksService
 {

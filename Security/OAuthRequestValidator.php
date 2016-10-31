@@ -1,6 +1,6 @@
 <?php
-namespace qb_php_sdk\Security;
-use qb_php_sdk\Exception\SdkExceptions\InvalidTokenException;
+namespace qb-php-sdk\Security;
+use qb-php-sdk\Exception\SdkExceptions\InvalidTokenException;
 
 /*require_once(PATH_SDK_ROOT . 'Security/RequestValidator.php');
 require_once(PATH_SDK_ROOT . 'Exception/SdkExceptions/InvalidTokenException.php');*/

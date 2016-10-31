@@ -1,5 +1,5 @@
 <?php
-namespace qb_php_sdk\DataService;
+namespace qb-php-sdk\DataService;
 
 /**
  * This class processes the batch request.
