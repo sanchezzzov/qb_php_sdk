@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Core\Configuration;
+namespace qb_php_sdk\Core\Configuration;
 /*require_once(PATH_SDK_ROOT . 'Core/Configuration/Message.php');
 require_once(PATH_SDK_ROOT . 'Core/Configuration/BaseUrl.php');*/
 

@@ -1,9 +1,9 @@
 <?php
-namespace qb-php-sdk\Utility\Serialization;
+namespace qb_php_sdk\Utility\Serialization;
 /*require_once(PATH_SDK_ROOT . 'Utility/IEntitySerializer.php');*/
-use qb-php-sdk\Utility\IEntitySerializer;
-use qb-php-sdk\XSD2PHP\src\com\mikebevz\xsd2php\Bind;
-use qb-php-sdk\XSD2PHP\src\com\mikebevz\xsd2php\Php2Xml;
+use qb_php_sdk\Utility\IEntitySerializer;
+use qb_php_sdk\XSD2PHP\src\com\mikebevz\xsd2php\Bind;
+use qb_php_sdk\XSD2PHP\src\com\mikebevz\xsd2php\Php2Xml;
 
 /**
  * Xml Serialize(r) to serialize and de serialize.

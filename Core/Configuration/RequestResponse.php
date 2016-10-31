@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Core\Configuration;
+namespace qb_php_sdk\Core\Configuration;
 /**
  * Contains properties common to Request and Response.
  */

@@ -1,4 +1,4 @@
-<?php namespace qb-php-sdk\Data;
+<?php namespace qb_php_sdk\Data;
 require_once('IPPNameBase.php');
 
 /**

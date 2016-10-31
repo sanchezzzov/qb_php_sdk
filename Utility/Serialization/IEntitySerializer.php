@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Utility\Serialization;
+namespace qb_php_sdk\Utility\Serialization;
 /**
  * Entity serialize contract.
  * TODO this abstract class looks abandoned because, another class

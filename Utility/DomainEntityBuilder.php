@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Utility;
+namespace qb_php_sdk\Utility;
 use ReflectionClass;
 use ReflectionProperty;
 use InvalidArgumentException;

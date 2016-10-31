@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Core;
+namespace qb_php_sdk\Core;
 /**
  * IRestHandler contains the methods for preparing the REST request, calls REST services and returns the response.
  */

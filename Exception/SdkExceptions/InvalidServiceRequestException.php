@@ -1,7 +1,7 @@
 <?php
-namespace qb-php-sdk\Exception\SdkExceptions;
+namespace qb_php_sdk\Exception\SdkExceptions;
 //require_once(PATH_SDK_ROOT . 'Exception/SdkException.php');
-use qb-php-sdk\Exception\SdkException;
+use qb_php_sdk\Exception\SdkException;
 
 /**
  * Represents an Exception raised when an invalid service request was made.

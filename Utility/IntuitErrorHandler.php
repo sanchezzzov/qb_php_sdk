@@ -1,6 +1,6 @@
 <?php
-namespace qb-php-sdk\Utility;
-use qb-php-sdk\Exception\IdsException;
+namespace qb_php_sdk\Utility;
+use qb_php_sdk\Exception\IdsException;
 
 /*require_once(PATH_SDK_ROOT . 'Utility/UtilityConstants.php');*/
 

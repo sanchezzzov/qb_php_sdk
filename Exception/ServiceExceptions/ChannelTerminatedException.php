@@ -1,7 +1,7 @@
 <?php
-namespace qb-php-sdk\Exception\ServiceExceptions;
+namespace qb_php_sdk\Exception\ServiceExceptions;
 //require_once(PATH_SDK_ROOT . 'Exception/ServiceException.php');
-use qb-php-sdk\Exception\ServiceException;
+use qb_php_sdk\Exception\ServiceException;
 
 /**
  * Represents an Exception raised when the communicating channel was terminated due to an unknown error.

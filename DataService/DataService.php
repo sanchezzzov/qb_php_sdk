@@ -1,5 +1,5 @@
 <?php namespace
-qb-php-sdk\DataService;
+qb_php_sdk\DataService;
 
 /*require_once(PATH_SDK_ROOT . 'Core/CoreHelper.php');
 require_once(PATH_SDK_ROOT . 'Core/ContentWriter.php');
@@ -8,23 +8,23 @@ require_once(PATH_SDK_ROOT . 'DataService/Batch.php');
 require_once(PATH_SDK_ROOT . 'DataService/IntuitCDCResponse.php');*/
 use Exception;
 use InvalidArgumentException;
-use qb-php-sdk\Core\Configuration\ContentWriterSettings;
-use qb-php-sdk\Core\ContentWriter;
-use qb-php-sdk\Core\CoreConstants;
-use qb-php-sdk\Core\CoreHelper;
-use qb-php-sdk\Core\IntuitServicesType;
-use qb-php-sdk\Core\IRestHandler;
-use qb-php-sdk\Core\RestCalls\RequestParameters;
-use qb-php-sdk\Core\RestCalls\SyncRestHandler;
-use qb-php-sdk\Core\ServiceContext;
-use qb-php-sdk\Diagnostics\TraceLevel;
-use qb-php-sdk\Exception\IdsException;
-use qb-php-sdk\Exception\IdsExceptionManager;
-use qb-php-sdk\Exception\SdkException;
-use qb-php-sdk\Exception\SdkExceptions\InvalidParameterException;
-use qb-php-sdk\Utility\Configuration\SerializationFormat;
-use qb-php-sdk\Utility\Serialization\JsonObjectSerializer;
-use qb-php-sdk\XSD2PHP\src\com\mikebevz\xsd2php\Php2Xml;
+use qb_php_sdk\Core\Configuration\ContentWriterSettings;
+use qb_php_sdk\Core\ContentWriter;
+use qb_php_sdk\Core\CoreConstants;
+use qb_php_sdk\Core\CoreHelper;
+use qb_php_sdk\Core\IntuitServicesType;
+use qb_php_sdk\Core\IRestHandler;
+use qb_php_sdk\Core\RestCalls\RequestParameters;
+use qb_php_sdk\Core\RestCalls\SyncRestHandler;
+use qb_php_sdk\Core\ServiceContext;
+use qb_php_sdk\Diagnostics\TraceLevel;
+use qb_php_sdk\Exception\IdsException;
+use qb_php_sdk\Exception\IdsExceptionManager;
+use qb_php_sdk\Exception\SdkException;
+use qb_php_sdk\Exception\SdkExceptions\InvalidParameterException;
+use qb_php_sdk\Utility\Configuration\SerializationFormat;
+use qb_php_sdk\Utility\Serialization\JsonObjectSerializer;
+use qb_php_sdk\XSD2PHP\src\com\mikebevz\xsd2php\Php2Xml;
 
 /**
  * This file contains DataService performs CRUD operations on IPP REST APIs.

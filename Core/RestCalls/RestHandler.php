@@ -1,8 +1,8 @@
 <?php
-namespace qb-php-sdk\Core\RestCalls;
-use qb-php-sdk\Core\CoreHelper;
-use qb-php-sdk\Core\ICompressor;
-use qb-php-sdk\Core\ServiceContext;
+namespace qb_php_sdk\Core\RestCalls;
+use qb_php_sdk\Core\CoreHelper;
+use qb_php_sdk\Core\ICompressor;
+use qb_php_sdk\Core\ServiceContext;
 
 /*require_once(PATH_SDK_ROOT . 'Core/CoreHelper.php');
 require_once(PATH_SDK_ROOT . 'Core/RestCalls/Compression/DataCompressionFormat.php');

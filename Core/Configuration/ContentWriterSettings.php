@@ -1,6 +1,6 @@
 <?php
-namespace qb-php-sdk\Core\Configuration;
-use qb-php-sdk\Exception\SdkException;
+namespace qb_php_sdk\Core\Configuration;
+use qb_php_sdk\Exception\SdkException;
 
 /**
  * Description of ContentWriterSettings

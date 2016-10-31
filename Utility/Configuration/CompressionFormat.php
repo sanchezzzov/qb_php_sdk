@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Utility\Configuration;
+namespace qb_php_sdk\Utility\Configuration;
 
 /**
  * Format used to compress data.

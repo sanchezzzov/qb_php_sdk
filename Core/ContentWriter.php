@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Core;
+namespace qb_php_sdk\Core;
 /**
  * Writes temporary file 
  *

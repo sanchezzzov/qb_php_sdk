@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Utility;
+namespace qb_php_sdk\Utility;
 /**
  * Entity serialize contract.
  */

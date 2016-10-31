@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Core\RestCalls;
+namespace qb_php_sdk\Core\RestCalls;
 /**
  * Parameters for calling Rest calls.
  */

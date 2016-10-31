@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Utility\Serialization;
+namespace qb_php_sdk\Utility\Serialization;
 
 /**
  * Descirbes meta data for domain model entity 

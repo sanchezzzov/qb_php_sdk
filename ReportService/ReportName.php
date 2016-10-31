@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\ReportService;
+namespace qb_php_sdk\ReportService;
 /**
  * This class contains all the ReportName supported by the PHP SDK
  */

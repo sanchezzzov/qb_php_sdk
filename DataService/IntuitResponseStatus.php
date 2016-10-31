@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\DataService;
+namespace qb_php_sdk\DataService;
 /**
  * This file contains enumerations related to CRUD Operations and batch processing.
  */

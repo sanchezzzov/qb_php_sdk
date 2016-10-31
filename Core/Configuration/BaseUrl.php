@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Core\Configuration;
+namespace qb_php_sdk\Core\Configuration;
 /**
 * Base Urls for QBO, QBD and IPP
 */

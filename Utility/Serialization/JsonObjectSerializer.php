@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Utility\Serialization;
+namespace qb_php_sdk\Utility\Serialization;
 /*require_once(PATH_SDK_ROOT . 'Utility/IEntitySerializer.php');
 require_once(PATH_SDK_ROOT . 'Utility/DomainEntityBuilder.php');
 require_once(PATH_SDK_ROOT . 'Utility/MetadataExtractor.php');
@@ -11,10 +11,10 @@ require_once(PATH_SDK_ROOT . 'Diagnostics/TraceLogger.php');
 require_once(PATH_SDK_ROOT . 'Exception/IdsExceptionManager.php');*/
 
 //use Intuit\Ipp\Utility\DomainEntityBuilder;
-use qb-php-sdk\Diagnostics\TraceLogger;
-use qb-php-sdk\Exception\IdsExceptionManager;
-use qb-php-sdk\Utility\DomainEntityBuilder;
-use qb-php-sdk\Utility\IEntitySerializer;
+use qb_php_sdk\Diagnostics\TraceLogger;
+use qb_php_sdk\Exception\IdsExceptionManager;
+use qb_php_sdk\Utility\DomainEntityBuilder;
+use qb_php_sdk\Utility\IEntitySerializer;
 use stdClass;
 
 /**

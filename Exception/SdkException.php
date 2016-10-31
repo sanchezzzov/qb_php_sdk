@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Exception;
+namespace qb_php_sdk\Exception;
 
 //require_once(PATH_SDK_ROOT . 'Exception/IdsException.php');
 

@@ -1,5 +1,5 @@
-<?php namespace qb-php-sdk\Data;
-namespace qb-php-sdk\Data;
+<?php namespace qb_php_sdk\Data;
+namespace qb_php_sdk\Data;
 /**
  * @xmlNamespace http://schema.intuit.com/finance/v3
  * @xmlType 

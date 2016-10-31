@@ -1,8 +1,8 @@
 <?php
-namespace qb-php-sdk\Core\RestCalls\Compression;
+namespace qb_php_sdk\Core\RestCalls\Compression;
 /*require_once(PATH_SDK_ROOT . 'Core/Interface/ICompressor.php');
 require_once(PATH_SDK_ROOT . 'Core/RestCalls/Compression/DataCompressionFormat.php');*/
-use qb-php-sdk\Core\ICompressor;
+use qb_php_sdk\Core\ICompressor;
 
 /**
  * GZip compressor.

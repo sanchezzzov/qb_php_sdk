@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Diagnostics;
+namespace qb_php_sdk\Diagnostics;
 
 /**
  * This file defines the trace levels.

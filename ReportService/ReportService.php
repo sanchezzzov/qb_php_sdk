@@ -1,12 +1,12 @@
 <?php
-namespace qb-php-sdk\ReportService;
+namespace qb_php_sdk\ReportService;
 use InvalidArgumentException;
-use qb-php-sdk\Core\CoreConstants;
-use qb-php-sdk\Core\CoreHelper;
-use qb-php-sdk\Core\RestCalls\RequestParameters;
-use qb-php-sdk\Core\RestCalls\SyncRestHandler;
-use qb-php-sdk\Exception\SdkExceptions\InvalidParameterException;
-use qb-php-sdk\Utility\Configuration\SerializationFormat;
+use qb_php_sdk\Core\CoreConstants;
+use qb_php_sdk\Core\CoreHelper;
+use qb_php_sdk\Core\RestCalls\RequestParameters;
+use qb_php_sdk\Core\RestCalls\SyncRestHandler;
+use qb_php_sdk\Exception\SdkExceptions\InvalidParameterException;
+use qb_php_sdk\Utility\Configuration\SerializationFormat;
 
 require_once(PATH_SDK_ROOT . 'Core/CoreHelper.php');
 require_once(PATH_SDK_ROOT . 'Core/ContentWriter.php');

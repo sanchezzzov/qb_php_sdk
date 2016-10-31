@@ -6,19 +6,19 @@
  * Time: 16:21
  */
 
-namespace qb-php-sdk;
+namespace qb_php_sdk;
 
 
-use qb-php-sdk\Core\IntuitServicesType;
-use qb-php-sdk\Core\ServiceContext;
-use qb-php-sdk\DataService\DataService;
-use qb-php-sdk\Security\OAuthRequestValidator;
+use qb_php_sdk\Core\IntuitServicesType;
+use qb_php_sdk\Core\ServiceContext;
+use qb_php_sdk\DataService\DataService;
+use qb_php_sdk\Security\OAuthRequestValidator;
 use yii\helpers\ArrayHelper;
 
 class QuickBooksService
 {
     /**
-     * @var \qb-php-sdk\DataService\DataService
+     * @var \qb_php_sdk\DataService\DataService
      */
     protected $dataService;
 

@@ -1,18 +1,18 @@
 <?php
-namespace qb-php-sdk\PlatformService;
+namespace qb_php_sdk\PlatformService;
 /*require_once(PATH_SDK_ROOT . 'Exception/SdkExceptions/InvalidTokenException.php');
 require_once(PATH_SDK_ROOT . 'Exception/SdkExceptions/InvalidParameterException.php');
 require_once(PATH_SDK_ROOT . 'Core/RestCalls/RequestParameters.php');
 require_once(PATH_SDK_ROOT . 'Core/RestCalls/SyncRestHandler.php');*/
 use InvalidArgumentException;
-use qb-php-sdk\Core\CoreConstants;
-use qb-php-sdk\Core\RestCalls\RequestParameters;
-use qb-php-sdk\Core\RestCalls\SyncRestHandler;
-use qb-php-sdk\Core\ServiceContext;
-use qb-php-sdk\Exception\SdkExceptions\InvalidParameterException;
-use qb-php-sdk\Exception\SdkExceptions\InvalidTokenException;
-use qb-php-sdk\Utility\Configuration\CompressionFormat;
-use qb-php-sdk\Utility\Configuration\SerializationFormat;
+use qb_php_sdk\Core\CoreConstants;
+use qb_php_sdk\Core\RestCalls\RequestParameters;
+use qb_php_sdk\Core\RestCalls\SyncRestHandler;
+use qb_php_sdk\Core\ServiceContext;
+use qb_php_sdk\Exception\SdkExceptions\InvalidParameterException;
+use qb_php_sdk\Exception\SdkExceptions\InvalidTokenException;
+use qb_php_sdk\Utility\Configuration\CompressionFormat;
+use qb_php_sdk\Utility\Configuration\SerializationFormat;
 
 
 /**

@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\XSD2PHP\src\com\mikebevz\xsd2php;
+namespace qb_php_sdk\XSD2PHP\src\com\mikebevz\xsd2php;
 
 class NullLogger {
 

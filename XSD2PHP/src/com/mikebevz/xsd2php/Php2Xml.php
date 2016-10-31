@@ -19,7 +19,7 @@ namespace com\mikebevz\xsd2php;
 
 /*require_once dirname(__FILE__) . '/Common.php';
 require_once dirname(__FILE__) . '/NullLogger.php';*/
-use qb-php-sdk\XSD2PHP\src\com\mikebevz\xsd2php\NullLogger;
+use qb_php_sdk\XSD2PHP\src\com\mikebevz\xsd2php\NullLogger;
 
 /**
  * PHP to XML converter

@@ -1,7 +1,7 @@
 <?php
-namespace qb-php-sdk\Core\RestCalls;
-use qb-php-sdk\Core\ServiceContext;
-use qb-php-sdk\Exception\IdsException;
+namespace qb_php_sdk\Core\RestCalls;
+use qb_php_sdk\Core\ServiceContext;
+use qb_php_sdk\Exception\IdsException;
 
 /**
  * Handles the fault tags in the response and handles them.

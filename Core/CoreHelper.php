@@ -1,14 +1,14 @@
 <?php
-namespace qb-php-sdk\Core;
+namespace qb_php_sdk\Core;
 use BadFunctionCallException;
-use qb-php-sdk\Core\RestCalls\Compression\DeflateCompressor;
-use qb-php-sdk\Core\RestCalls\Compression\GZipCompressor;
-use qb-php-sdk\Diagnostics\TraceLevel;
-use qb-php-sdk\Exception\IdsException;
-use qb-php-sdk\Utility\Configuration\CompressionFormat;
-use qb-php-sdk\Utility\Configuration\SerializationFormat;
-use qb-php-sdk\Utility\Serialization\JsonObjectSerializer;
-use qb-php-sdk\Utility\Serialization\XmlObjectSerializer;
+use qb_php_sdk\Core\RestCalls\Compression\DeflateCompressor;
+use qb_php_sdk\Core\RestCalls\Compression\GZipCompressor;
+use qb_php_sdk\Diagnostics\TraceLevel;
+use qb_php_sdk\Exception\IdsException;
+use qb_php_sdk\Utility\Configuration\CompressionFormat;
+use qb_php_sdk\Utility\Configuration\SerializationFormat;
+use qb_php_sdk\Utility\Serialization\JsonObjectSerializer;
+use qb_php_sdk\Utility\Serialization\XmlObjectSerializer;
 
 /*require_once(PATH_SDK_ROOT . 'Core/CoreConstants.php');
 require_once(PATH_SDK_ROOT . 'Core/LogRequestsToDisk.php');

@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Core\Configuration;
+namespace qb_php_sdk\Core\Configuration;
 /**
  * Contains properties used to indicate whether request and response messages are to be logged.
  */

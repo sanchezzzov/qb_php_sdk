@@ -1,9 +1,9 @@
 <?php
-namespace qb-php-sdk\Utility;
-use qb-php-sdk\Utility\Serialization\AbstractEntity;
-use qb-php-sdk\Utility\Serialization\ObjectEntity;
-use qb-php-sdk\Utility\Serialization\SimpleEntity;
-use qb-php-sdk\Utility\Serialization\UnknownEntity;
+namespace qb_php_sdk\Utility;
+use qb_php_sdk\Utility\Serialization\AbstractEntity;
+use qb_php_sdk\Utility\Serialization\ObjectEntity;
+use qb_php_sdk\Utility\Serialization\SimpleEntity;
+use qb_php_sdk\Utility\Serialization\UnknownEntity;
 use ReflectionProperty;
 use RuntimeException;
 use UnexpectedValueException;

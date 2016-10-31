@@ -1,6 +1,6 @@
 <?php
-namespace qb-php-sdk\Exception\ServiceExceptions;
-use qb-php-sdk\Exception\ServiceException;
+namespace qb_php_sdk\Exception\ServiceExceptions;
+use qb_php_sdk\Exception\ServiceException;
 
 //require_once(PATH_SDK_ROOT . 'Exception/ServiceException.php');
 

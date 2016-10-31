@@ -1,11 +1,11 @@
 <?php
-namespace qb-php-sdk\Core\Configuration;
+namespace qb_php_sdk\Core\Configuration;
 /**
  * This file contains Logger.
  */
 /*require_once(PATH_SDK_ROOT . 'Core/Configuration/RequestLog.php');
 require_once(PATH_SDK_ROOT . 'Diagnostics/Logger.php');*/
-use qb-php-sdk\Diagnostics\Logger;
+use qb_php_sdk\Diagnostics\Logger;
 
 /**
  * Contains properties used to set the Logging mechanism.

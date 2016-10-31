@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Utility\Serialization;
+namespace qb_php_sdk\Utility\Serialization;
 
 /**
  * Represents simple data type, which is string, integer or float

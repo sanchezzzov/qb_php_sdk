@@ -1,5 +1,5 @@
 <?php
-namespace qb-php-sdk\Data;
+namespace qb_php_sdk\Data;
 require_once('IPPPurchaseByVendor.php');
 
 /**
