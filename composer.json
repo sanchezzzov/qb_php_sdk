@@ -1,0 +1,23 @@
+{
+  "name": "sanchezzzov/qb-php-sdk",
+  "type": "library",
+  "description": "Simple wrapper over QuickBooks Software Development Kit",
+  "keywords": [
+    "quickbooks",
+    "SDK",
+    "order purchase",
+    "QBO",
+    "invoice",
+    "vendor"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexandr Kirilyuk",
+      "email": "sanchezzzov@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2"
+  }
+}
