@@ -1,0 +1,20 @@
+{
+    "vendor": {
+        "id": 1,
+        "name": "Orion"
+    },
+    "items": [
+        {
+            "amount": 100.00,
+            "qty": 10,
+            "price": 10.00,
+            "description": "Free form description of the line item that appears in the printed record (max 4000 chars)"
+        },
+        {
+            "amount": 301.50,
+            "qty": 15,
+            "price": 20.10,
+            "description": ""
+        }
+    ]
+}

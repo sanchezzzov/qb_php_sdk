@@ -10,7 +10,6 @@ namespace qb_php_sdk\CRUD;
 
 
 use qb_php_sdk\Data\IPPAccount;
-use qb_php_sdk\Data\IPPAccountBasedExpenseLineDetail;
 use qb_php_sdk\Data\IPPAccountTypeEnum;
 use qb_php_sdk\Data\IPPItemBasedExpenseLineDetail;
 use qb_php_sdk\Data\IPPLine;
@@ -22,61 +21,46 @@ use yii\helpers\Json;
 
 class PurchaseOrder extends QuickBooksService
 {
-    const DEFAULT_MEMO = "For Internal usage";
+    const DEFAULT_MEMO = "Import from DiningEdge";
 
     public function create($jsonEntity)
     {
         $purchaseOrderList = Json::decode($jsonEntity, true);
         $purchaseOrder     = new IPPPurchaseOrder();
 
-        if (($vendorName = ArrayHelper::getValue($purchaseOrderList, 'vendorName')) == null) {
+        $vendor = null;
+        if (($vendor = ArrayHelper::getValue($purchaseOrderList, 'vendor')) == null) {
             throw new \Exception("Vendor not found");
+        }
+        if (isset($vendor['id'])) {
+            $purchaseOrder->VendorRef = $vendor['id'];
+        } elseif (isset($vendor['name'])) {
+            $vendorObject             = $this->getVendor($vendor['name']);
+            $purchaseOrder->VendorRef = $vendorObject->Id;
         }
         if (($purchaseOrderItems = ArrayHelper::getValue($purchaseOrderList, 'items')) == null) {
-            throw new \Exception("Vendor not found");
+            throw new \Exception("Purchase order items not found");
         }
-        $purchaseOrder->Memo = self::DEFAULT_MEMO;
-
-        $vendor                   = $this->getVendor($vendorName);
-        $purchaseOrder->VendorRef = $vendor->Id;
+        $purchaseOrder->Memo    = self::DEFAULT_MEMO;
+        $purchaseOrder->TxnDate = date('Y-m-d', time());
 
         $liabilityAccount            = $this->getLiabilityAccount();
         $purchaseOrder->APAccountRef = $liabilityAccount->Id;
-        $purchaseOrder->Domain = "QBO";
-        $purchaseOrderLines = [];
+        $purchaseOrder->Domain       = "QBO";
+        $purchaseOrderLines          = [];
         foreach ($purchaseOrderItems as $purchaseOrderItem) {
-            $purchaseOrderLine  = new IPPLine();
-            //$purchaseOrderAccountDetail = new IPPAccountBasedExpenseLineDetail();
-            $purchaseOrderItemDetail = new IPPItemBasedExpenseLineDetail();
-            $purchaseOrderLine->DetailType = IPPLineDetailTypeEnum::IPPLINEDETAILTYPEENUM_ACCOUNTBASEDEXPENSELINEDETAIL;
-            //$purchaseOrderLine->AccountBasedExpenseLineDetail = $purchaseOrderAccountDetail;
+            $purchaseOrderLine                             = new IPPLine();
+            $purchaseOrderLine->DetailType                 = "ItemBasedExpenseLineDetail";
+            $purchaseOrderLine->Amount                     = ArrayHelper::getValue($purchaseOrderItem, 'amount', 0);
+            $purchaseOrderItemDetail                       = new IPPItemBasedExpenseLineDetail();
+            $purchaseOrderItemDetail->Qty                  = ArrayHelper::getValue($purchaseOrderItem, 'qty', 0);
+            $purchaseOrderItemDetail->UnitPrice            = ArrayHelper::getValue($purchaseOrderItem, 'price', 0);
+            $purchaseOrderLine->DetailType
+                                                           = IPPLineDetailTypeEnum::IPPLINEDETAILTYPEENUM_ACCOUNTBASEDEXPENSELINEDETAIL;
             $purchaseOrderLine->ItemBasedExpenseLineDetail = $purchaseOrderItemDetail;
-            $purchaseOrderLines[] = $purchaseOrderLine;
+            $purchaseOrderLines[]                          = $purchaseOrderLine;
         }
-
-/*        $purchaseOrder->Line = [$purchaseOrderLines];
-
-        $account1                             = AccountHelper::getExpenseBankAccount($dataService);
-        $detail->AccountRef                   = $account1->Id;
-        $line1->AccountBasedExpenseLineDetail = $detail;*/
-
-
-
-        //$purchaseOrder->POEmail = Email::getEmailAddress();
-
-
-
-/*        $globalTaxEnum                       = new IPPGlobalTaxCalculationEnum();
-        $purchaseOrder->GlobalTaxCalculation = $globalTaxEnum::IPPGLOBALTAXCALCULATIONENUM_NOTAPPLICABLE;
-
-        $purchaseOrder->ReplyEmail = Email::getEmailAddress();
-
-        $purchaseOrder->ShipAddr = Address::getPhysicalAddress();
-
-        $purchaseOrder->TotalAmt = 3.00;
-
-        date_default_timezone_set('UTC');
-        $purchaseOrder->TxnDate = date('Y-m-d', time());*/
+        $purchaseOrder->Line = [$purchaseOrderLines];
 
         return $purchaseOrder;
     }

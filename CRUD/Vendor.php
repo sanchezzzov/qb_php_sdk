@@ -14,11 +14,27 @@ use qb_php_sdk\QuickBooksService;
 
 class Vendor extends QuickBooksService
 {
+    public $objectName = "Vendor";
+
     public function create($vendorName)
     {
         $vendor              = new IPPVendor();
         $vendor->DisplayName = $vendorName;
         $this->dataService->Add($vendor);
+
         return $vendor;
+    }
+
+    public function findAll()
+    {
+        return $this->dataService->FindAll($this->objectName);
+    }
+
+    public function findById($id)
+    {
+        $vendor     = new IPPVendor();
+        $vendor->Id = $id;
+
+        return $this->dataService->FindById($vendor);
     }
 }
